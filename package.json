@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest --verbose",
-    "test:watch": "jest --watch --verbose"
+    "test:watch": "jest --watch --verbose",
+    "prepublish": "yarn test && yarn lint"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
