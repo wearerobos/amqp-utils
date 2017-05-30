@@ -5,7 +5,8 @@
     ],
     "env": {
       "browser": false,
-      "node": true
+      "node": true,
+      "jest": true,
     },
     "rules": {
       "func-names": 0,
@@ -17,6 +18,7 @@
         "functions": "ignore"
       }],
       "no-underscore-dangle": 0,
-      "max-len": ["error", 120]
+      "max-len": ["error", 120],
+      "no-use-before-define": ["error", { "functions": false }]
     }
 }
