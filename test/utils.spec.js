@@ -33,12 +33,11 @@ describe('AMQP-Utils', () => {
       ),
     };
 
-
     const amqputils = AMQPUtils(amqpImplementationMock);
     amqputils.subscribe('some.queue', callback);
-    expect(callback).toHaveBeenCalled();
+    expect(callback).resolves().toHaveBeenCalled();
   });
 
   it.skip('publish() calls amqp\'s sendToQueue()', () => {});
-  it.skip('rpc() calls amqp\'s sendToQueue() and consumes a unique queue to then run the callback', () => {});
+  it.skip('request() calls amqp\'s sendToQueue() and consumes a unique queue to then run the callback', () => {});
 });
