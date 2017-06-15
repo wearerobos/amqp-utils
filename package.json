@@ -1,6 +1,6 @@
 {
   "name": "amqp-utils",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Utility lib for AMQP",
   "main": "index.js",
   "repository": "https://github.com/wearerobos/amqp-utils.git",
