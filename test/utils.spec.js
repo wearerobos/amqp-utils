@@ -40,4 +40,6 @@ describe('AMQP-Utils', () => {
 
   it.skip('publish() calls amqp\'s sendToQueue()', () => {});
   it.skip('request() calls amqp\'s sendToQueue() and consumes a unique queue to then run the callback', () => {});
+  it.skip(`reply() calls amqp's consume() and calls sendToQueue using the original message's replyTo property
+      as the queue's name`, () => {});
 });
