@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "test": "DEBUG=amqp-utils jest --verbose",
     "test:watch": "DEBUG=amqp-utils jest --watch --verbose",
+    "test:coverage": "jest --coverage",
     "prepublish": "yarn test && yarn lint"
   },
   "devDependencies": {
