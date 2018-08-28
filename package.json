@@ -1,0 +1,25 @@
+{
+  "name": "amqp-utils",
+  "version": "2.0.0",
+  "description": "Utility lib for AMQP",
+  "main": "index.js",
+  "repository": "https://github.com/wearerobos/amqp-utils.git",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "DEBUG=amqp-utils jest --verbose",
+    "test:watch": "DEBUG=amqp-utils jest --watch --verbose",
+    "test:coverage": "jest --coverage",
+    "prepublish": "yarn test && yarn lint"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "jest": "^20.0.4"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "debug": "^2.6.8"
+  }
+}
